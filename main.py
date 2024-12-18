@@ -28,9 +28,9 @@ text_rect.y = 30
 
 def display():
 	screen_image.fill(color1)
-	screen_image.blit(text_image, text_rect)
 	screen_image.blit(small_head, small_head_rect)
 	pygame.draw.rect(screen_image, color2, bullet_rect)
+	screen_image.blit(text_image, text_rect)
 	pygame.display.flip()
 
 display()
